@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Prompt the user to enter two numbers
-read -p "Enter first number: " num1
-read -p "Enter second number: " num2
+num1=25
+num2=22
 
 # Perform addition
 sum=$((num1 + num2))
