@@ -1,8 +1,14 @@
 #!/bin/bash
 
-# Prompt the user to enter two numbers
-read -p "Enter first number: " num1
-read -p "Enter second number: " num2
+# Check if two arguments are provided
+if [ $# -ne 2 ]; then
+  echo "Usage: $0 <num1> <num2>"
+  exit 1
+fi
+
+# Get numbers from arguments
+num1=$1
+num2=$2
 
 # Perform addition
 sum=$((num1 + num2))
